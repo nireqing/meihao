@@ -15,9 +15,12 @@
         autoplay="{{homenavautoplay}}"
         previous-margin="10px"
         display-multiple-items="4"
-        bindtap='tobigkind'
         current="active-index">
-          <swiper-item wx:for="{{homenav}}" wx:key="index">
+          <swiper-item
+          wx:for="{{homenav}}"
+          data-id="{{index}}"
+          bindtap='tobigkind'
+          wx:key="index">
             <text class='homenavtext'>{{item.name}}</text>
           </swiper-item>
       </swiper>

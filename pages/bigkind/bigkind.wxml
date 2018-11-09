@@ -12,7 +12,12 @@
       previous-margin="10px"
       display-multiple-items="4"
       current="active-index">
-        <swiper-item wx:for="{{homenav}}" wx:key="index">
+        <swiper-item
+        wx:for="{{homenav}}"
+        wx:key="index"
+        data-id="{{index}}"
+        bindtap='getkind'
+        >
           <text class='homenavtext'>{{item.name}}</text>
         </swiper-item>
     </swiper>
@@ -28,6 +33,8 @@
   <view
     wx:for="{{kindcontent}}"
     wx:key="{{item.product_id}}"
+    data-id="{{item.product_id}}"
+    bindtap='todetail'
     class='new-things-three'>
     <image
     class='new-things-three-img'
