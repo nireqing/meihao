@@ -17,10 +17,15 @@
   height: 200rpx;
 }
 .weidenglu-text{
+  border: none;
   color: #1B1B1B;
   margin-top: 10rpx;
   font-size: 30rpx;
   text-align: center;
+}
+.denglu-button{
+  background-color:white;
+  border: none;
 }
 
 /* 我的五个icon */
