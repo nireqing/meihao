@@ -2,8 +2,17 @@
 import ajax from '../../utils/request.js'
 Page({
   data: {
-    hotkeys:[],
-    searchjieguo:[]
+    hotkeys:[]
+  },
+  // 热门搜索
+  hotsearch(e){
+    const hotvalue = this.data.hotkeys.filter((item,index) => {
+      return index === e.currentTarget.dataset.id
+    })
+    const searchvalue = encodeURI(hotvalue[0])
+    wx.navigateTo({
+      url: `/pages/searchdetail/searchdetail?id=${searchvalue}`
+    })
   },
   //回车搜索
   gosearch(e){
@@ -11,7 +20,6 @@ Page({
       wx.navigateTo({
         url: `/pages/searchdetail/searchdetail?id=${searchvalue}`
       })
-    // console.log(e.detail.value)
   },
   onLoad: function (options) {
     //获取hotkeys

@@ -37,6 +37,8 @@
   <view
     wx:for="{{hotkeys}}"
     wx:key="{{index}}"
+    data-id='{{index}}'
+    bindtap='hotsearch'
     class='remen-content'>
     <view class='remen-list'>
       <text>{{item}}</text>     
