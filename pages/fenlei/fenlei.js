@@ -1,4 +1,5 @@
 import ajax from '../../utils/request.js'
+const app = getApp()
 Page({
   data: {
     jiazizai: {},
@@ -20,5 +21,8 @@ Page({
           jiazizai: resp.data.data[0].module_contents
         })
       })
-  }
+  },
+  onShow: function () {
+  app.setBadge()
+  },
 })

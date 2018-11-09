@@ -11,9 +11,10 @@ import {
   ifallcheckedAction,
   delcheckedAction
   } from '../../store/actions/cart.js'
+const app = getApp()
 Page({
   data:{
-    cart: {},
+    cart: [],
     isbj: false,
     totalprice:0.00,
     isallchecked: false
@@ -93,13 +94,14 @@ Page({
     state.dispatch(totalpriceAction())
     state.dispatch(ifallcheckedAction())    
   },
-  onShow: function() {
+  onShow: function() { 
     state.subscribe(this.changeCart)
+    app.setBadge()
   },
   changeCart(){
     // console.log(state.getState().cart.allchecked)
     this.setData({
-      cart: wx.getStorageSync('cart') || [],  
+      cart: state.getState().cart.cart,  
       totalprice: state.getState().cart.totalPrice,
       isallchecked: state.getState().cart.allchecked
     })

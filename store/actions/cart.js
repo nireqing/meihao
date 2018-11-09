@@ -65,3 +65,9 @@ export const delcheckedAction = () => {
     type: 'DELECTCHECKED'
   }
 }
+//计算总数量
+export const allcountAction = () => {
+  return {
+    type: 'ALLCOUNT'
+  }
+}
