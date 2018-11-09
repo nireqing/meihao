@@ -1,0 +1,67 @@
+<!--pages/detail/detail.wxml-->
+<!-- 两个跳转按钮 -->
+<view class='wrap-two'>
+  <view
+  bindtap='tohome'
+  class='tohome'>
+    <icon class='icon iconfont icon-home-selected-copy icon-home'></icon>
+  </view>
+  <view
+  bindtap='tocart'
+  class='tocart'>
+    <icon class='icon iconfont icon-cart-selected-copy icon-carticon'></icon>
+  </view>
+<!-- 轮播图 -->
+  <view class='lunbo'>
+    <swiper
+      class='wrap-swiper'
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      indicator-active-color="{{indicatoractivecolor}}">
+      <block wx:for="{{lunboUrl}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+<!-- 中间的描述 -->
+  <view class='ms-wrap'>
+    <text class='ms-detail'>{{msdetail}}</text>
+    <text class='ms-title'>{{mstitle}}</text>
+    <text class='ms-price'>￥{{msprice/100}}</text>
+  </view> 
+<!-- 打底 -->
+  <view class='dd-wrap'>
+<!-- 规格选择和免运费 -->
+    <view class='xuan'>
+      <view class='guige'>
+        <text>规格选择</text>
+        <icon class='icon iconfont icon-jiantouyou xuan-icon'></icon>
+      </view>
+      <view class='mianyunfei'>
+        <text>免运费</text>
+      </view>
+      </view>
+    </view>
+<!-- detail-tabbar -->
+    <view class='d-rabbar'>
+      <view class='kefu-wrap'>
+        <icon class='icon iconfont icon-kefu'></icon>
+        <text class='kefu-text'>客服</text>
+      </view>|
+      <view class='addcart-wrap'>
+        <icon class='icon iconfont icon-addcart'></icon>
+        <text
+        bindtap='addtoCart'
+        data-id="{{qingqiuid}}"
+        class='addcart-text'>加入购物车</text>
+      </view>|
+      <view class='buy-wrap'>
+        <text class='buy-text'>立刻拥有</text>
+      </view>
+    </view>
+  </view>

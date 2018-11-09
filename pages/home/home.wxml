@@ -1,0 +1,118 @@
+<!--pages/home/home.wxml-->
+<scroll-view
+  scroll-y
+  scroll-top="{{scrollTop}}
+  class='scroll-nav'
+>
+  <!-- 搜索按钮 -->
+    <view class='home-select'>
+      <icon type="search" size="12" class='icon-serch'/>    
+      <text>把生命浪费在美好的事物上</text>
+    </view>
+  <!-- 分类导航 -->
+    <view class='home-nav'>
+      <swiper
+        autoplay="{{homenavautoplay}}"
+        previous-margin="10px"
+        display-multiple-items="4"
+        bindtap='tobigkind'
+        current="active-index">
+          <swiper-item wx:for="{{homenav}}" wx:key="index">
+            <text class='homenavtext'>{{item.name}}</text>
+          </swiper-item>
+      </swiper>
+    </view>
+  <!-- 轮播图 -->
+   <view class='lunbotu'>
+     <swiper
+      indicator-dots="{{indicatorDots}}"
+      autoplay="{{autoplay}}"
+      interval="{{interval}}"
+      duration="{{duration}}"
+      circular="{{circular}}"
+      indicator-active-color="{{indicatoractivecolor}}">
+      <block wx:for="{{imgUrls}}" wx:key="link">
+        <swiper-item>
+          <image src="{{item.pic}}" class="slide-image"/>
+        </swiper-item>
+      </block>
+    </swiper>
+   </view>
+  <!-- 四个图标 -->
+    <view class='home-four'>
+      <view
+      class='four'
+      wx:for="{{homefour}}"
+      wx:key="{{item.link}}"
+      >
+        <image src="{{item.pic}}" />
+      </view> 
+    </view>
+  <!-- things -->
+    <view class='wrap'>
+    <!-- 四张分类图 -->
+      <view class='img-four'>
+        <view
+        wx:for="{{imgfour}}"
+        wx:key="link"
+        class='img-view'>
+          <image
+          class='img-four-size'
+          src="{{item.pic}}">
+          </image>
+        </view>
+      </view>
+    <!-- 新品上架 -->
+    <view class='new-things'>
+      <view class='new-title'>
+        <image
+        class='new-things-title-img'
+        src='{{homenewtitle.pic}}'>
+        </image>
+      </view>
+      <!-- 新品 -->
+      <view class='new-things-wrap'>
+        <view
+          wx:for="{{homenewthings}}"
+          wx:key="{{item.container_id}}"
+          data-id="{{item.container_id}}"
+          bindtap='todetail'
+          class='new-things-three'>
+          <image
+          class='new-things-three-img'
+          src='{{item.cover_url}}'>
+          </image>
+          <text class='new-ctitle'>{{item.title}}</text>
+          <text class='new-price'>￥{{item.price/100}}</text>
+        </view>
+      </view>
+    </view>
+      <!-- 美食控 -->
+      <view class='meishikong'>
+        <!-- 美食控标题 -->
+        <view class='msk-title'>
+          <image
+          class='msk-title-img'
+          src='{{msktitle.pic}}'>
+          </image>
+        </view>
+        <!-- 美食控的内容 -->
+        <view class='msk-wrap'>
+          <view
+          wx:for="{{msk}}"
+          wx:key="{{item.container_id}}"
+          data-id="{{item.container_id}}"
+          bindtap='todetail'
+          class='msk-things'>
+            <image
+            class='msk-img'
+            src='{{item.cover_url}}'>
+            </image>
+            <text class='msk-title'>{{item.short_description}}</text>
+            <text class='msk-ctitle'>{{item.title}}</text>
+            <text class='msk-price'>￥{{item.price/100}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+</scroll-view>

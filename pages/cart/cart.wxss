@@ -1,0 +1,224 @@
+/* pages/cart/cart.wxss */
+@import '/assets/libs/icon.wxss';
+page{
+  background-color: #F0F4F7;
+  height: 100%;
+}
+/* 编辑商品 */
+  .bianji{
+    height: 100rpx;
+    width: 100%;
+    background-color: white;
+  }
+  .bianji text{
+    padding-right: 40rpx;
+    color: #656565;
+    line-height: 100rpx;
+    font-size: 30rpx;
+    float: right;
+  }
+/* 商品的打底 */
+  .lists-wrap{
+    background-color: #EDF1F4;
+    width: 100%;
+    min-height: 1008rpx;
+    padding-top: 3rpx;  
+  }
+/* 商品的样式 */
+  .lists{
+    background-color: white;
+    width: 100%;
+    height: 300rpx;
+    margin-bottom: 20rpx;
+  }
+  .lists checkbox{
+    float: left;
+    width: 80rpx;
+    height: 300rpx;
+    line-height: 300rpx;
+    text-align: center;
+  }
+  .lists image{
+    float: left;
+    width: 200rpx;
+    height: 200rpx;
+    margin-top: 50rpx;
+  }
+  .text-wrap{
+    padding-left: 20rpx;
+    float: left;
+    width: 420rpx;
+    height: 300rpx;
+    position: relative;
+  }
+  .list-title{
+    margin-top: 40rpx;
+    display: block;
+    font-size: 32rpx;
+    width: 100%;
+    color: #616161;
+  }
+  .list-guige{
+    display: block;  
+    font-size: 24rpx;
+    margin-top: 10rpx;
+    color: #999999;
+  }
+  .list-price{
+    display: block;  
+    color: #161616;
+    font-size: 32rpx;
+    font-weight: bold;
+    float: left;
+  }
+  .list-bottom{
+    position: absolute;
+    bottom: 35rpx;
+    width: 100%;
+    left: 20rpx;
+  }
+  .list-count{
+    float: right;
+    font-size: 30rpx;
+    margin-right: 10rpx;
+  }
+
+/* 结算 */
+  .jiesuan-tabbar{
+    height: 120rpx;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    bottom: 0rpx;
+  }
+  .quanxuan{
+    display: block;
+    float: left;
+    width: 200rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    font-size: 32rpx;
+    color: #1D1D1D;
+  }
+  .quanxuan checkbox{
+    float: left;
+  }
+  .quanbuxuan{
+    display: block;
+    width: 100rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+    float: left;
+  }
+  .allprice{
+    display: block;
+    float: left;
+    font-size: 32rpx;
+    width: 300rpx;
+    height: 120rpx;
+    line-height: 120rpx;
+  }
+  .allpricey{
+    font-size: 28rpx;
+    color: #FF6532;
+  }
+  .allprice0{
+    color: #FF6532;
+    font-size: 36rpx;
+    font-weight: bold;
+  }
+  .tobuy{
+    display: block;
+    float: right;
+    height: 120rpx;
+    width: 250rpx;
+    line-height: 120rpx;
+    font-size: 32rpx;
+    background-color: #1B241F;
+    color: #D24A22;
+    text-align: center;
+  }
+/* 加减号的样式 */
+  .jiajian{
+    width: 200rpx;
+    background-color: #F9F9F9;
+  }
+  .jian{
+    font-size: 50rpx;
+    display: inline-block;
+    width: 55rpx;
+    height: 75rpx;  
+    line-height: 75rpx;  
+    text-align: center;
+    background-color: #FBFBFB;
+    color: #DDDDDD;
+  }
+  .count{
+    font-size: 40rpx;
+    display: inline-block;
+    width: 85rpx;
+    height: 75rpx;
+    line-height: 76rpx;
+    margin-left: 2rpx;
+    text-align: center;
+    background-color: #F5F5F5;
+    color: #9A9A9A;
+  }
+  .jia{
+    font-size: 40rpx;
+    display: inline-block;
+    width: 55rpx;
+    height: 75rpx;
+    line-height: 76rpx;
+    margin-left: 2rpx;
+    text-align: center;
+    background-color: #EEEEEE;
+    color: #030303;
+  }
+/* 删除 */
+  .bianjitrue{
+    display: block;
+    float: right;
+    width: 150rpx;
+    text-align: center;
+    height: 120rpx;
+    margin-right: 20rpx;  
+  }
+  .del{
+    display: block;
+    width: 150rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-top: 30rpx;
+    font-size: 30rpx;  
+    color: #FF6433;
+    border-radius: 40rpx;
+    border: 2rpx solid #FF6433;
+  }
+/* 另一个样式 */
+  .nothingimage{
+    text-align: center;
+  }
+  .nothingimage image{
+    height: 400rpx;
+    width: 400rpx;
+    display: block;
+    margin-left: 180rpx;  
+    margin-top: 120rpx;
+    margin-bottom: 60rpx;  
+  }
+  .nothingimage text{
+    display: block;
+    color: #707175;
+    line-height: 60rpx;
+  }
+  .nothingimage .nothing-ys{
+    color: #222629;
+    width: 420rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    border: 2rpx solid #222629;
+    border-radius: 130rpx;
+    margin-left: 160rpx;
+    margin-top: 50rpx;
+  }

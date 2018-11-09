@@ -1,0 +1,38 @@
+<!--pages/mine/mine.wxml-->
+<!-- <open-data type="userAvatarUrl"></open-data> -->
+<!-- <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">授权登录</button> -->
+<!-- 点击登录 -->
+<view class='weidenglu'>
+  <view class='weidenglu-wrap'>
+    <image
+    class='weidenglu-img'
+    src='https://img.zcool.cn/community/01e0ae58ae3d72a801219c77fadb52.png@1280w_1l_2o_100sh.png'></image>
+    <text class='weidenglu-text'>点击登录</text>
+  </view>
+  <!-- 已购商品 -->
+  <view class='lists'>
+        <text class='lists-text'>已购商品</text>
+        <icon class='icon iconfont icon-jiantouyou lists-icon'></icon>
+      </view>
+  <!-- 五个icon -->
+  <view class='mine-five'>
+    <view
+    wx:for="{{minefive}}"
+    wx:key="{{iten.id}}"
+    class='mine-one'>
+      <icon class='icon iconfont {{item.icon}} icon-icon'></icon>
+      <text class='mine-one-text'>{{item.text}}</text>
+    </view>
+  </view>
+  <!-- lists -->
+    <view class='lists-wrap'>
+      <view
+      wx:for="{{lists}}"
+      wx:key="{{item.id}}"
+      class='lists'>
+        <text class='lists-text'>{{item.text}}</text>
+        <icon class='icon iconfont icon-jiantouyou lists-icon'></icon>
+      </view>
+    </view>
+
+</view>

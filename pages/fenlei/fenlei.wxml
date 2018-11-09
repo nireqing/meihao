@@ -1,0 +1,54 @@
+<!--pages/fenlei/fenlei.wxml-->
+<!-- 搜索按钮 -->
+  <view class='home-select'>
+    <icon type="search" size="12" class='icon-serch'/>    
+    <text>把生命浪费在美好的事物上</text>
+  </view>
+<!-- 分类 -->
+  <view class='big-wrap'>
+    <view
+      wx:for="{{fenlei}}"
+      wx:key="{{item.id}}"
+      wx:for-index="ind"
+      class='fenlei-wrap'>
+      <!-- title -->
+      <view class='fenlei-title'>
+        <text class='fenlei-title-text'>{{item.module_name}}</text>
+        <view class='fenlei-title-right'>
+          <text class='fenlei-more'>More</text>
+          <icon class='icon iconfont icon-jiantouyou more-icon'></icon>
+        </view>
+      </view>
+      <!-- content -->
+      <swiper
+        autoplay="{{autoplay}}"
+        previous-margin="10px"
+        display-multiple-items="3.3">
+          <swiper-item
+          wx:for="{{item.module_contents}}"
+          wx:for-item="flfl"
+          wx:for-index="flfli"
+          data-id="{{flfl.kind_id}}"
+          bindtap="tokind"
+          wx:key="index">
+
+            <view class='fl-content'>
+              <image src='{{flfl.img_url}}'></image>
+              <text class='fl-text'>{{flfl.img_name}}</text>
+            </view>
+          </swiper-item>
+      </swiper>
+
+
+
+      <!-- <view
+        wx:for="{{jiazizai}}"
+        wx:key="{{item.index}}"
+        class='fenlei-contents'>
+          <view class='fl-content'>
+            <image src='{{item.img_url}}'></image>
+            <text class='fl-text'>{{item.img_name}}</text>
+          </view>
+      </view> -->
+    </view>
+  </view>

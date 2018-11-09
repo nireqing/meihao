@@ -1,0 +1,168 @@
+/* pages/detail/detail.wxss */
+@import '/assets/libs/icon.wxss';
+
+/* 顶部两个跳转按钮 */
+.wrap-two{
+  width: 100%;
+  height: 150rpx;
+  position: fixed;
+  top: 0rpx;
+  left: 0rpx;
+}
+.tohome{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  top: 40rpx;
+  left: 30rpx;
+  position: fixed;
+  z-index: 20;
+  background-color: #ccc;  
+}
+.icon-home{
+  color: white;
+  font-size: 48rpx;
+  margin-left: 16rpx;
+}
+.tocart{
+  position: fixed;
+  float: right;
+  background-color: #ccc;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  top: 40rpx;
+  right: 30rpx;
+  z-index: 20;  
+}
+.icon-carticon{
+  color: white;
+  font-size: 48rpx;
+  margin-left: 14rpx;
+}
+/* 轮播图 */
+.wrap-swiper{
+  margin: 0 auto;
+  width: 100%;
+  height: 680rpx;
+  text-align: center;
+}
+.slide-image{
+  width: 100%;
+  height: 100%;
+}
+/* 中间的描述 */
+.ms-wrap{
+  width: 100%;
+  height: 260rpx;
+  text-align: center;
+}
+.ms-detail{
+  display: block;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 36rpx;
+  color: #666666;
+}
+.ms-title{
+  display: block;
+  width: 100%;
+  height: 80rpx;
+  line-height: 70rpx;
+  font-size: 42rpx;
+  color: #232323;
+  font-weight: bold;
+}
+.ms-price{
+  font-weight: bold;
+  color: #565656;
+  display: block;
+}
+/* 打底 */
+.dd-wrap{
+  width: 100%;
+  background-color: #F2F3F7;
+  padding-top: 16rpx;
+}
+/* 规格选择 */
+.xuan{
+  margin: 0 auto; 
+  width: 750rpx;
+  padding: 0 20rpx;
+  height: 100rpx;
+  background-color: white;
+}
+.guige{
+  margin-top: 30rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  float: left;
+  background-color: #E5EAEE;
+  font-size: 30rpx;
+  width: 43%;
+  color: #98999B;
+  padding-left: 20rpx;  
+}
+.guige text{
+  float: left
+}
+.xuan-icon{
+  float: right;
+  margin-right: 20rpx;
+}
+.mianyunfei{   
+  margin-top: 30rpx;  
+  padding-left: 20rpx;
+  float: left;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  height: 100rpx;
+  width: 46%;
+  color: #616264;
+  background-color: #EFF3F4;
+}
+/* detail-tabbar */
+.d-rabbar{
+  width: 100%;
+  height: 100rpx;
+  background-color: #1E1E1E;
+  position: fixed;
+  bottom: 0;
+  color: #9A9A9A;  
+  font-size: 40rpx;
+  line-height: 100rpx;
+  text-align: center;
+  display: flex;
+}
+.kefu-wrap{
+  float: left;
+  width: 140rpx;
+  color: white;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 24rpx;
+}
+.icon-kefu{
+  height: 100rpx;
+  line-height: 95rpx;
+  margin-right: 6rpx;
+}
+.addcart-wrap{
+  font-size: 24rpx;
+  width: 230rpx;  
+  float: left;
+  color: white;
+}
+.icon-addcart{
+  height: 100rpx;
+  line-height: 96rpx;
+  margin-right: 6rpx;
+}
+.buy-wrap{
+  color: #EA673D;
+  font-size: 32rpx;
+  width: 500rpx;
+}
+.buy-text{
+  letter-spacing:8rpx;
+}
