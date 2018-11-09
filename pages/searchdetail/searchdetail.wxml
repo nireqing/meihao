@@ -1,0 +1,38 @@
+<!--pages/kind/kind.wxml-->
+
+<!-- 搜索按钮 -->
+  <view class='home-select'>
+    <icon type="search" size="12" class='icon-serch'/>    
+    <text>把生命浪费在美好的事物上</text>
+  </view>
+<!-- kind-content -->
+<view class='kind-wrap'>
+  <view
+    wx:for="{{kindcontent}}"
+    wx:key="{{item.product_id}}"
+    data-id="{{item.product_id}}"
+    bindtap='tokindetail'
+    class='new-things-three'>
+    <image
+    class='new-things-three-img'
+    src='{{item.cover_url}}'>
+    </image>
+    <text class='new-title'>{{item.short_description}}</text>
+    <text class='new-cttle'>{{item.title}}</text>
+    <text class='new-price'>￥{{item.price/100}}</text>
+  </view>
+<!-- 两个跳转按钮 -->
+  <view class='wrap-two'>
+    <view
+    bindtap='tohome'
+    class='tohome'>
+      <icon class='icon iconfont icon-home-selected-copy icon-home'></icon>
+    </view>
+    <view
+    bindtap='tocart'
+    class='tocart'>
+      <icon class='icon iconfont icon-cart-selected-copy icon-carticon'></icon>
+    </view>
+  </view>
+
+</view>

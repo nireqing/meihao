@@ -5,7 +5,9 @@
   class='scroll-nav'
 >
   <!-- 搜索按钮 -->
-    <view class='home-select'>
+    <view
+    bindtap='tosearch'
+    class='home-select'>
       <icon type="search" size="12" class='icon-serch'/>    
       <text>把生命浪费在美好的事物上</text>
     </view>

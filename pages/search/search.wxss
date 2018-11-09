@@ -1,0 +1,109 @@
+/* pages/search/search.wxss */
+@import '/assets/libs/icon.wxss';
+/* 顶部搜索 */
+.search-bg{
+  float: left;
+  display: block;
+  width: 420rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 60rpx;
+  background-color: #F6F7F9;
+  margin-left: 50rpx;
+  position: relative;
+  padding-left: 100rpx;
+  padding-top: 10rpx;
+  font-size: 30rpx;
+}
+.icon-icon{
+  display: block;
+  width: 30rpx;
+  height: 30rpx;
+  position: absolute;
+  top: 10rpx;
+  left: 40rpx;
+  color: #CACBCD;
+  font-size: 44rpx;  
+  z-index: 2;
+}
+.input-text{
+  color: #CACBCD;  
+}
+.quxiao{
+  color: #1F1F1F;
+  float: right;
+  font-size: 30rpx;
+  margin-right: 40rpx;
+  margin-top: 13rpx;
+}
+.dingbu{
+  width: 100%;
+  height: 90rpx;
+  border-bottom:  1rpx solid #E8E9EB;
+}
+
+/* 商品音频专栏 */
+.syz-wrap{
+  width: 100%;
+  height: 150rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.syz{
+  height: 100%;
+  line-height: 100%;
+}
+.quan-s{
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #FF7D4B;
+}
+.syz-text{
+  line-height: 150rpx;
+  color: #232323;
+  font-size: 38rpx;
+  margin-left: 15rpx;
+}
+.quan-y{
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #D8D8D8;
+}
+.syz-textw{
+  font-size: 32rpx;
+  color: #666666;
+  line-height: 150rpx;
+  margin-left: 15rpx;
+}
+/* 热门搜索 */
+.remen-wrap{
+  width: 100%;
+}
+.remen-title{
+  font-size: 34rpx;
+  color: #666666;
+  height: 100rpx;
+  line-height: 100rpx;
+  margin-left: 30rpx;
+}
+.remen-content{
+  width: 98%;
+  margin: 0 auto;
+  background-color: lavenderblush;
+}
+.remen-list{
+  text-align: center;
+  width: 150rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border: 1rpx solid #656565;
+  border-radius: 60rpx;
+  margin-top: 33rpx;
+  margin-left: 28rpx;
+  float: left;
+  font-size: 32rpx;
+}

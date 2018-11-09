@@ -19,6 +19,11 @@ Page({
     msk: [],
     scrollTop: 100
   },
+  tosearch() {
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   todetail(e){
     wx.navigateTo({
       url: `/pages/detail/detail?id=${e.currentTarget.dataset.id}`,

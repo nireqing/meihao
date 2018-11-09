@@ -1,0 +1,46 @@
+<!--pages/search/search.wxml-->
+
+<!-- 顶部搜索 -->
+<view class='dingbu'>
+  <view class='search-bg'> 
+    <label>
+      <icon class='icon iconfont icon-search icon-icon'></icon>
+      <input
+      placeholder='把生命浪费在美好的事物上'
+      class='input-text'
+      type='text'
+      confirm-type="search"
+      bindconfirm="gosearch"
+      ></input>   
+    </label>
+  </view>
+  <text class='quxiao'>取消</text>
+</view>  
+<!-- 商品音频专栏 -->
+<view class='syz-wrap'>
+  <view class='syz'>
+    <view class='quan-s'></view>
+    <text class='syz-text'>商品</text>
+  </view>
+  <view class='syz'>
+    <view class='quan-y'></view>
+    <text class='syz-textw'>音频</text>
+  </view>
+  <view class='syz'>
+    <view class='quan-y'></view>
+    <text class='syz-textw'>专栏</text>
+  </view>
+</view>
+<!-- 热门搜索 -->
+<view class='remen-wrap'>
+  <text class='remen-title'>热门搜索</text>
+  <view
+    wx:for="{{hotkeys}}"
+    wx:key="{{index}}"
+    class='remen-content'>
+    <view class='remen-list'>
+      <text>{{item}}</text>     
+    </view>
+  </view>
+</view>
+

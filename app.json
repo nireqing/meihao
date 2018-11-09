@@ -6,7 +6,9 @@
     "pages/mine/mine",
     "pages/detail/detail",
     "pages/kind/kind",
-    "pages/bigkind/bigkind"
+    "pages/bigkind/bigkind",
+    "pages/search/search",
+    "pages/searchdetail/searchdetail"
   ],
   "window":{
     "backgroundTextStyle":"light",
