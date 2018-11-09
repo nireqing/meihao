@@ -14,7 +14,9 @@
       ></input>   
     </label>
   </view>
-  <text class='quxiao'>取消</text>
+  <text
+  bindtap='back'
+  class='quxiao'>取消</text>
 </view>  
 <!-- 商品音频专栏 -->
 <view class='syz-wrap'>

@@ -6,6 +6,11 @@ Page({
     kindcontent: [],
     kindbanner: []
   },
+  tosearch() {
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   // 跳转到详情页
   todetail(e) {
     wx.navigateTo({

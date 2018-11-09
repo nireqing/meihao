@@ -4,6 +4,11 @@ Page({
     homenav: [],
     kindcontent: []
   },
+  tosearch() {
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   tokindetail(e) {
     wx.navigateTo({
       url: `/pages/detail/detail?id=${e.currentTarget.dataset.id}`

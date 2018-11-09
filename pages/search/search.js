@@ -4,6 +4,12 @@ Page({
   data: {
     hotkeys:[]
   },
+  //取消
+  back(){
+    wx.navigateBack({
+      delta: 1
+    })
+  },
   // 热门搜索
   hotsearch(e){
     const hotvalue = this.data.hotkeys.filter((item,index) => {

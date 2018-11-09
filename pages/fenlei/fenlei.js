@@ -6,6 +6,11 @@ Page({
     fenlei: [],
     autoplay: false
   },
+  tosearch() {
+    wx.navigateTo({
+      url: '/pages/search/search',
+    })
+  },
   tokind(e) {
     wx.navigateTo({
       url: `/pages/kind/kind?id=${e.currentTarget.dataset.id}`,
